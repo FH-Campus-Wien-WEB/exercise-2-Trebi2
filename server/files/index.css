@@ -1,8 +1,11 @@
 @import url(base.css);
 
 h1 {
-  font-size: 200%;
-  margin: 8px 0px;
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: bold;
 }
 
 img {
@@ -10,22 +13,50 @@ img {
 }
 
 article {
-  background-color: lightgray;
-  border-radius: 16px;
-  padding: 16px;
-  margin: 2vw;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  max-width: 1000px;
 }
 
 span {
-  margin-right: 4px;
+  margin-right: 8px;
 }
 
 .genre {
-  padding: 4px 8px;
-  border: solid black 1px;
-  border-radius: 6px;
-  background-color: darkgray;
-  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  background-color: #e8e1d5;
+  padding: 5px 10px 3px 10px;
+  border-radius: 999px;
+  margin-bottom: 6px;
+  margin-right: 4px;
+  margin-top: 4px;
+}
+
+.movie-content {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.movie-content img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.movie-info{
+  flex: 1;
+  margin-top: 16px;
+}
+
+.movie-info p {
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 input {
@@ -38,4 +69,14 @@ select {
 
 textarea {
   width: 100%;
+}
+
+.movie-info button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #e8e1d5;
+  border: 1px solid #cfc6b8;
+  border-radius: 6px;
+  font-family: 'Josefin Sans', sans-serif;
 }

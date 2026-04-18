@@ -66,6 +66,7 @@ function putMovie() {
     - Configure the function below as the onload event handler
     - Send the movie data as JSON
   */
+  const movie = getMovie();
 
   const xhr = new XMLHttpRequest();
   xhr.onload = function () {
