@@ -69,8 +69,10 @@ function putMovie() {
   const movie = getMovie();
 
   const xhr = new XMLHttpRequest();
+
   xhr.open("PUT", "/movies/" + imdbID);
   xhr.setRequestHeader("Content-Type", "application/json");
+  
   xhr.onload = function () {
     if (xhr.status == 200 || xhr.status === 204) {
       location.href = "index.html";
@@ -78,6 +80,7 @@ function putMovie() {
       alert("Saving of movie data failed. Status code was " + xhr.status);
     }
   };
+  
   xhr.send(JSON.stringify(movie));
 }
 
